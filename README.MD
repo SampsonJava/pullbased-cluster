@@ -1,6 +1,9 @@
 ## 介绍
-2021第二届云原生中间件性能挑战赛2柔性调度第一名
+2021第二届云原生中间件性能挑战赛2柔性调度外部赛第一名
+#### 外部赛链接
 https://tianchi.aliyun.com/competition/entrance/531923/rankingList/1
+#### 内部赛链接
+https://tianchi.aliyun.com/competition/entrance/531918/rankingList
 
 ## 引言
 
