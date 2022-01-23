@@ -22,6 +22,7 @@ import java.util.concurrent.ThreadLocalRandom;
 public class TestClientClusterFilter implements ClusterFilter, BaseFilter.Listener {
     private final static Logger logger = LoggerFactory.getLogger(TestClientClusterFilter.class);
 
+    // step.1
     @Override
     public Result invoke(Invoker<?> invoker, Invocation invocation) throws RpcException {
         try {

@@ -19,6 +19,7 @@ import java.util.concurrent.CompletionException;
 public class TestClientFilter implements Filter, BaseFilter.Listener {
     private final static Logger logger = LoggerFactory.getLogger(TestClientFilter.class);
 
+    // step.4
     @Override
     public Result invoke(Invoker<?> invoker, Invocation invocation) throws RpcException {
         RpcContext.getClientAttachment().setAttachment(CommonConstants.TIMEOUT_KEY,

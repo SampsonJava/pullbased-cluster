@@ -19,6 +19,7 @@ import java.util.concurrent.ThreadLocalRandom;
  */
 public class UserLoadBalance implements LoadBalance {
 
+    // step.3
     @Override
     public <T> Invoker<T> select(List<Invoker<T>> invokers, URL url, Invocation invocation) throws RpcException {
         int size = invokers.size();
