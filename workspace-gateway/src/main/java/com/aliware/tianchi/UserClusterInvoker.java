@@ -32,7 +32,6 @@ public class UserClusterInvoker<T> extends AbstractClusterInvoker<T> {
     private final static Logger logger = LoggerFactory.getLogger(UserClusterInvoker.class);
     private final Timer checker;
 
-    // step.2
     public UserClusterInvoker(Directory<T> directory) {
         super(directory);
         checker = new HashedWheelTimer(
@@ -40,6 +39,7 @@ public class UserClusterInvoker<T> extends AbstractClusterInvoker<T> {
                 10, TimeUnit.MILLISECONDS);
     }
 
+    // step.2
     @Override
     protected Result doInvoke(Invocation invocation, List<Invoker<T>> invokers, LoadBalance loadbalance) throws RpcException {
         Invoker<T> invoker = this.select(loadbalance, invocation, invokers, null);
